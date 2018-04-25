@@ -18,6 +18,7 @@ html{
 
 .brand{
     justify-content: space-between;
+    font-weight: 800;
 }
 
 a{
@@ -82,7 +83,29 @@ a{
     background: #000;
     border-radius: 20px;
     padding: 3px 15px;
-    position: absolute;
-    bottom: 10px;
-    right: 50%;
+    display: block; 
+    text-align: center;
+    clear: both;
+    width: 12%;
+    margin: 51% auto 0 auto;
+}
+
+@media only screen and (max-width: 600px){
+    .images{
+        display: none;
+    }
+    .navcontainer{
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        display: inherit;
+    }
+    .cta{
+        text-align: center;
+    }
+    .scroll{
+        align-items: center;
+        width: auto;
+    }
 }
